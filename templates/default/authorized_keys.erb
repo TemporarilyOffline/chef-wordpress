@@ -1,0 +1,6 @@
+<% @github_logins.each do |login| %>
+<%= "# GitHub keys for #{login} from github.com/#{login}.keys" %>
+<% `curl --silent --show-error https://github.com/#{login}.keys`.split("\n").each do |key| %>
+<%= key %>
+<% end %>
+<% end %>
