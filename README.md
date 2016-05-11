@@ -33,7 +33,7 @@
   db_host: 127.0.0.1
 
 ###Answers to requirements:
-  * Add users and their SSH keys by name from github
+  * Add users and their SSH keys by name from github, apply os-hardening and ssh-hardening cookbooks as an example of some minor hardening
   * Converges in Chef-Zero under test-kitchen, as a result of how chef-zero is designed, it should run great in chef-client
   * Secrets are stored in encrypted data bags.  Under normal circumstances, I would .gitignore the key to protect the secrets or implement any of the     common security tools like vault or secret server
   * Tests can be vetted with `kitchen verify`

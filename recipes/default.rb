@@ -1,3 +1,7 @@
+# Apply some security
+include_recipe 'ssh-hardening'
+include_recipe 'os-hardening'
+
 # Configure Users
 include_recipe 'wordpress::accounts'
 

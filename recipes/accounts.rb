@@ -16,6 +16,10 @@ operators.each do |op|
     gid 'ops'
     supports manage_home: true
   end
+  
+  bash "Unlock #{op} account" do
+    code "usermod -p '*' #{op}"
+  end
 
   directory "/home/#{op}/.ssh" do
     owner op
