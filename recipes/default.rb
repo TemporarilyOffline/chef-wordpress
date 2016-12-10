@@ -60,7 +60,7 @@ end
 
 remote_file '/var/www/latest.tar.gz' do
   source 'https://wordpress.org/latest.tar.gz'
-  checksum '1a4d9f05142701e72413609cc30029f66af0f3b29d4ff051e888f48026d20ac9'
+  checksum '7eae27ff70716dae2d2ba58280f2832fd70a208c9cdaf29ab36ac789c14d6977'
   notifies :run, 'bash[Extract]', :immediately
 end
 
